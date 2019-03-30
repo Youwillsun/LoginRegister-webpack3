@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- 右上角LoGO和标题区开始 -->
+    <section id="leftTopArea">
+        <div class="container">
+            <div class="row">
+                <div class="caption col-md-12 col-lg-12 col-sm-12">
+                    <img class="logo img-reposive" src="images/LOGO.jpg" alt="LOGO">
+                    <div class="captionTitle">
+                        <h3>BAR团队贴吧</h3>
+                        <h5>名字就是BAR团队</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- 右上角LoGO和标题区开始 -->
+
+    <!-- 登录注册内容区开始 -->
+    <section id="larBox">
+        <div class="container">
+            <!-- 登录注册内容标题区开始 -->
+            <div class="row">
+                <p class="larBoxTitle col-lg-4 col-md-4 col-sm-4"><span
+                        class="bottomLine">登录</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>注册</span>
+                </p>
+            </div>
+            <!-- 登录注册内容标题区结束 -->
+            <!-- 登录内容表单区 -->
+            <div class="row login" id="login">
+                <div class="col-lg-4 col-md-4 col-sm-4">
+                    <form class="form-inline">
+                        <div class="form-group">
+                            <div class="input-group">
+                                <div class="input-group-addon"><i class="glyphicon glyphicon-user"></i></div>
+                                <input type="text" name="account" id="loginAccount" class="form-control"
+                                    placeholder="请输入账号">
+                            </div>
+                            <div class="input-group">
+                                <div class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></div>
+                                <input type="password" name="password" id="loginPassword" class="form-control"
+                                    placeholder="请输入密码">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <!-- 登录内容提示区 -->
+            <div class="row login">
+                <div class="col-lg-4 col-md-4 col-sm-4 prompt">
+                    <a class="forgetPwd" href="javascript:void(0)">忘记密码？</a>
+                    <a class="logonProblem" href="javascript:void(0)">登录遇到问题？</a>
+                </div>
+            </div>
+            <!-- 登录内容登录按钮 -->
+            <div class="row login">
+                <div class="col-lg-4 col-md-4 col-sm-4">
+                    <button class="loginBtn btn-primary center-block" id="loginBtn">登录</button>
+                </div>
+            </div>
+            <!-- ---------------注册和登录分割线------------------------ -->
+            <!-- 注册内容表单区 -->
+            <div class="row register" id="registerForm" style="display:none;">
+                <div class="col-lg-4 col-md-4 col-sm-4">
+                    <form class="form-inline">
+                        <div class="form-group">
+                            <div class="input-group">
+                                <div class="input-group-addon"><i class="glyphicon glyphicon-user"></i></div>
+                                <input type="text" name="account" id="account" class="form-control warnAccount"
+                                    placeholder="请输入您的学号" pattern="^\d{9}$" required="required">
+                            </div>
+                            <div class="input-group">
+                                <div class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></div>
+                                <input type="password" name="password" id="password" class="form-control warnPassword"
+                                    placeholder="请输入10~16位密码" pattern="(?!^\\d+$)(?!^[a-zA-Z]+$)(?!^[_#@]+$).{10,16}"
+                                    required="required">
+                            </div>
+                            <div class="input-group">
+                                <div class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></div>
+                                <input type="password" name="againpassword" id="againPassword"
+                                    class="form-control warnAgainPassword" placeholder="请再次输入密码"
+                                    pattern="(?!^\\d+$)(?!^[a-zA-Z]+$)(?!^[_#@]+$).{10,16}" required="required">
+                            </div>
+                            <div class="input-group">
+                                <div class="input-group-addon"><i class="glyphicon glyphicon-phone"></i></div>
+                                <input type="text" name="phoneNumber" id="phoneNumber"
+                                    class="form-control warnPhoneNumber" placeholder="请输入您的手机号"
+                                    pattern="^1(3|4|5|7|8)\d{9}$" required="required">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <!-- 注册内容注册按钮 -->
+            <div class="row register" style="display:none;">
+                <div class="col-lg-4 col-md-4 col-sm-4">
+                    <button class="registerBtn btn-primary center-block" id="registerBtn">注册</button>
+                </div>
+            </div>
+            <!-- 注册底部内容提示区 -->
+            <div class="row register" style="display:none;">
+                <div class="col-lg-4 col-md-4 col-sm-4 prompt">
+                    <p class="rule" href="javascript:void(0)">点击 “注册” 即表示您同意并愿意遵守BAR团队指定的</p>
+                    <p class="rule"><a href="javascript:void(0)">用户协议</a>&nbsp;和&nbsp;<a
+                            href="javascript:void(0)">隐私政策</a>
+                        。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- 登录注册内容区结束 -->
+</body>
+
+</html>

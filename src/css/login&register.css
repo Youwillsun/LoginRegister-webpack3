@@ -1,0 +1,263 @@
+/* 注册登录样式开始 */
+/* 公共区域样式开始 */
+body {
+    background-color: #f4f4f4;
+}
+
+#leftTopArea .container .caption {
+    margin-top: 50px;
+}
+
+#leftTopArea .container .caption .logo {
+    width: 112px;
+    height: 98px;
+    float: left;
+    margin-right: 10px;
+}
+
+#leftTopArea .container .caption .captionTitle {
+    font-family: "微软雅黑";
+    color: #000;
+}
+
+#larBox {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    width: 390px;
+    height: 440px;
+    background-color: rgba(254, 254, 254, 1);
+    border-radius: 20px;
+}
+
+#larBox .larBoxTitle {
+    cursor: pointer;
+    font-size: 26px;
+    font-family: "微软雅黑";
+    color: #000;
+    text-align: center;
+    margin-top: 50px;
+    display: block;
+}
+
+#larBox .larBoxTitle .bottomLine {
+    border-bottom: 5px solid #ccc;
+    padding: 0 8px 8px 8px;
+    font-size: 28px;
+}
+
+/* 公共样式区域结束 */
+/* 登录样式区域开始 */
+#larBox .login .form-inline .form-group {
+    margin: 60px 0 30px 23px;
+}
+
+#larBox .login .form-inline .form-group .input-group {
+    margin-bottom: 15px;
+}
+
+#larBox .form-inline .form-control {
+    width: 280px;
+    height: 40px;
+}
+
+#larBox .login .prompt {
+    margin-left: 25px;
+}
+
+#larBox .login .prompt a {
+    font-size: 16px;
+    color: #ccc;
+    font-family: "微软雅黑";
+}
+
+#larBox .login .prompt .logonProblem {
+    float: right;
+    margin-right: 30px;
+}
+
+#larBox .login .loginBtn {
+    cursor: pointer;
+    font-size: 18px;
+    font-family: "微软雅黑";
+    border: 1px solid #169BD5;
+    background-color: #169BD5;
+    width: 210px;
+    height: 40px;
+    margin-top: 35px;
+    border-radius: 20px;
+    outline: none;
+}
+
+/* 登录样式区结束 */
+/* 注册样式区开始 */
+#larBox .register .form-inline .form-group {
+    margin: 30px 0 20px 23px;
+}
+
+#larBox .register .form-inline .form-group .input-group {
+    margin-bottom: 10px;
+}
+
+#larBox .register .form-inline .form-group .input-group input {
+    background: #fff url(../images/attention.png) no-repeat 98% center;
+    border-radius: 2px;
+    transition: padding .25s;
+}
+
+#larBox .register .form-inline .form-group .input-group input:focus:invalid {
+    background: #fff url(../images/warn.png) no-repeat 98% center;
+    box-shadow: 0 0 5px #d45252;
+    border-color: #b03535
+}
+
+#larBox .register .form-inline .form-group .input-group input:required:valid {
+    background: #fff url(../images/right.png) no-repeat 98% center;
+    box-shadow: 0 0 5px #5cd053;
+    border-color: #28921f;
+}
+
+#larBox .register .form-inline .form-group .input-group .warnAccount:required:valid {
+    background: #fff url(../images/warn.png) no-repeat 98% center;
+    box-shadow: 0 0 5px #5cd053;
+    border-color: #28921f;
+}
+#larBox .register .form-inline .form-group .input-group .warnPassword:required:valid {
+    background: #fff url(../images/warn.png) no-repeat 98% center;
+    box-shadow: 0 0 5px #5cd053;
+    border-color: #28921f;
+}
+#larBox .register .form-inline .form-group .input-group .warnAgainPassword:required:valid {
+    background: #fff url(../images/warn.png) no-repeat 98% center;
+    box-shadow: 0 0 5px #5cd053;
+    border-color: #28921f;
+}
+#larBox .register .form-inline .form-group .input-group .warnPhoneNumber:required:valid {
+    background: #fff url(../images/warn.png) no-repeat 98% center;
+    box-shadow: 0 0 5px #5cd053;
+    border-color: #28921f;
+}
+
+
+#larBox .form-inline .form-control {
+    width: 280px;
+    height: 40px;
+}
+
+#larBox .registerBtn {
+    cursor: pointer;
+    font-size: 18px;
+    font-family: "微软雅黑";
+    border: 1px solid #00CC00;
+    background-color: #00CC00;
+    width: 210px;
+    height: 40px;
+    border-radius: 20px;
+    outline: none;
+}
+
+#larBox .register .prompt {
+    margin-top: 10px;
+}
+
+#larBox .register .prompt .rule {
+    font-size: 10px;
+    color: #ccc;
+    font-family: "微软雅黑";
+    text-align: center;
+    line-height: 6px;
+}
+
+/* 注册样式区结束 */
+/* 媒体查询样式开始 */
+@media(max-width:1200px) {
+    #leftTopArea .container .caption .logo {
+        width: 96px;
+        height: 84px;
+    }
+
+    #larBox {
+        width: 320px;
+    }
+
+    #larBox .form-inline .form-control {
+        width: 200px;
+    }
+}
+
+@media(max-width:991.9px) {
+    #leftTopArea .container .caption .captionTitle {
+        display: none;
+    }
+
+    #larBox {
+        width: 255px;
+        height: 400px;
+    }
+
+    #larBox .form-inline .form-control {
+        width: 140px;
+    }
+
+    /* 登录 */
+    #larBox .login .prompt .logonProblem {
+        font-size: 12px;
+    }
+
+    #larBox .login .prompt .forgetPwd {
+        font-size: 12px;
+    }
+    #larBox .login .loginBtn {
+        margin-top: 20px;
+    }
+
+    /* 登录 */
+
+    /* 注册 */
+    #larBox .register .prompt .rule {
+        display: none;
+    }
+    #larBox .register #registerBtn{
+        margin-top: -10px;
+    }
+    /* 注册 */
+}
+
+@media(max-width:768px) {
+    #leftTopArea {
+        display: none;
+    }
+
+    #larBox {
+        background-image: url('../images/LOGO.jpg');
+        background-repeat: no-repeat;
+        background-size: 80px 70px;
+    }
+
+    #larBox .larBoxTitle {
+        margin-top: 68px;
+    }
+
+    /* 登录 */
+    #larBox .login .form-inline .form-group {
+        margin: 40px 0 30px 23px;
+    }
+    #larBox .login .loginBtn {
+        margin-top: 35px;
+    }
+    /* 登录 */
+    /* 注册 */
+    #larBox .register .form-inline .form-group {
+        margin: 20px 0 20px 23px;
+    }
+    #larBox .register #registerBtn{
+        margin-top: -5px;
+    }
+    /* 注册 */
+}
+
+/* 媒体查询样式结束 */
+/* 注册登录样式结束 */
